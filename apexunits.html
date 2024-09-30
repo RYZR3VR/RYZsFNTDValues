@@ -4,12 +4,23 @@
         <style>
             body {
                 margin: 0px;
+                padding: 0px;
                 font-family: Arial;
                 background-color: black;
             }
 
             main {
                 margin: 20px;
+            }
+
+            ::-webkit-scrollbar {
+                width: 0px;
+                background: transparent;
+            }
+
+            div {
+                display: block;
+                unicode-bidi: isolate;
             }
 
             .navbar ul {
@@ -131,14 +142,14 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 25px;
-                row-gap: 10px;
+                gap: 70px;
+                row-gap: 50px;
             }
 
             .gradient-text {
                 font-size: 24.0pt;
                 font-weight: bold;
-                font-family: 'Source Code Pro';
+                font-family: Arial;
                 background-clip: padding-box;
                 background-color: rgba(0, 0, 0, 0.0590000004);
                 border-bottom: solid #ffffff1f 0.75pt;
@@ -174,6 +185,7 @@
                 <li><a href="index.html">RYZs FNTD Values</a></li>
                 <li><a href="apexunits.html">Apex Units</a></li>
                 <li><a href="evolvedunits.html">Evolved Units</a></li>
+                <li><a href="nightmareunits.html">Nightmare Units</a></li>
                 <li><a href="items.html">Items</a></li>
                 <li><a href="enchants.html">Enchants</a></li>
             </ul>
