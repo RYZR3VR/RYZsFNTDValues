@@ -166,6 +166,7 @@
                 background: linear-gradient(to bottom, #8024f5, #d70a4e);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                border-radius: 10px;
             }
 
             .element {
@@ -176,6 +177,20 @@
                 position: relative;
                 border-color: white;
                 border-radius: 10px;
+            }
+
+            .image {
+                display: block;
+                border: 2px solid linear-gradient(to bottom, #8024f5, #d70a4e);
+                border-radius: 5px;
+            }
+
+            #normal-profile {
+                background-image: linear-gradient(black, black), linear-gradient(to bottom, #8024f5, #d70a4e);
+                border: 2px double transparent;
+                background-origin: border-box;
+                background-clip: content-box, border-box;
+                border-radius: 5px;
             }
         </style>
     </head>
@@ -195,7 +210,7 @@
 
         <div class="container">
             <div class="element" data-name="astralBonnie">
-                <img src="AstralBonnie.png">
+                <img src="AstralBonnie.png" class="image" id="normal-profile">
                 <div class="textTitle">Astral Bonnie</div>
                 <div class="text">Value: 50K</div>
                 <div class="stats-container">

@@ -13,6 +13,16 @@
                 margin: 20px;
             }
 
+            ::-webkit-scrollbar {
+                width: 0px;
+                background: transparent;
+            }
+
+            div {
+                display: block;
+                unicode-bidi: isolate;
+            }
+
             .navbar ul {
                 list-style-type: none;
                 background-color: rgb(25, 25, 25);
@@ -38,6 +48,150 @@
             .navbar li {
                 float: left;
             }
+            
+            .units {
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                display: block;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 70px;
+                row-gap: 50px;
+            }
+
+            .image-container {
+                position: relative;
+                width: 100%;
+                height: 13.125rem;
+            }
+
+            .text {
+                width: 100%;
+                margin-top: 10px;
+                background: white;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-align: center;
+                font-size: 14px;
+                font-weight: bold;
+                border-radius: 5px;
+                text-transform: uppercase;
+            }
+
+            .textTitle {
+                width: 100%;
+                margin-top: 10px;
+                background: rgb(0, 128, 255);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-align: center;
+                font-size: 14px;
+                font-weight: bold;
+                border-radius: 5px;
+                text-transform: uppercase;
+            }
+
+            .stats-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                max-width: 210px;
+                height: 200px;
+                border-radius: 5px;
+            }
+            .stat, .stat-main {
+                margin: 5px 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            .stat-row {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .stat, .stat-main {
+                margin: 5px 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            .stat-title {
+                font-weight: bold;
+                font-size: 14px;
+                color: rgb(0, 128, 255);
+            }
+
+            .stat-text {
+                font-size: 14px;
+                color: white;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 70px;
+                row-gap: 50px;
+            }
+
+            .gradient-text {
+                font-size: 24.0pt;
+                font-weight: bold;
+                font-family: Arial;
+                background-clip: padding-box;
+                background-color: rgba(0, 0, 0, 0.0590000004);
+                border-bottom: solid #ffffff1f 0.75pt;
+                border-left: solid #ffffff1f 0.75pt;
+                border-right: solid #ffffff1f 0.75pt;
+                border-top: solid #ffffff1f 0.75pt;
+                margin-bottom: 38.0pt;
+                margin-top: 0.0pt;
+                padding-bottom: 9.0pt;
+                padding-left: 9.0pt;
+                padding-right: 9.0pt;
+                padding-top: 9.0pt;
+                text-align: center;
+                background: rgb(0, 128, 255);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                border-radius: 10px;
+            }
+
+            .element {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 13.125rem;
+                position: relative;
+                border-color: white;
+                border-radius: 10px;
+            }
+
+            .image {
+                display: block;
+                border: 2px solid linear-gradient(to bottom, #0099ff), #0099ff;
+                border-radius: 5px;
+            }
+
+            #normal-profile {
+                background-image: linear-gradient(black, black), linear-gradient(to bottom, #0099ff), #0099ff;
+                border: 2px double transparent;
+                background-origin: border-box;
+                background-clip: content-box, border-box;
+                border-radius: 5px;
+            }
         </style>
     </head>
     <body>
@@ -51,5 +205,28 @@
                 <li><a href="enchants.html">Enchants</a></li>
             </ul>
         </nav>
+
+        <div class="gradient-text">RYZs FNTD Values</div>
+
+        <div class="container">
+            <div class="element" data-name="apexButton">
+                <img src="AstralBonnie.png" class="image" id="normal-profile">
+                <h1></h1>
+                <div class="gradient-text"><a href="apexunits.html">APEX</a></div>
+            </div>
+            
+            <div class="element" data-name="evolvedButton">
+                <img src="AgonizedSpringtrap.png" class="image" id="normal-profile">
+                <h1></h1>
+                <div class="gradient-text"><a href="evolvedunits.html">EVOLVED</a></div>
+            </div>
+            
+            <div class="element" data-name="nightmareButton">
+                <img src="BlightedEndoFreddy.png" class="image" id="normal-profile">
+                <h1></h1>
+                <div class="gradient-text"><a href="nightmareunits.html">NIGHTMARE</a></div>
+            </div>
+        </div>
+    </div>
     </body>
 </html>
